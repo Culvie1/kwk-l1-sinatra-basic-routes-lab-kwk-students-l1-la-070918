@@ -12,7 +12,7 @@ get "/hello/:name" do
     "My hometwon is #{@hometown}."
 
 get "/hello/:name" do
-    @user_name = params[:name]
+    @song = params[:name]
     "My favorite song is #{@song}."
   end 
   end
