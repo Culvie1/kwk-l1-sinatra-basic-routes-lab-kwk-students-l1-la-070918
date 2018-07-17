@@ -14,8 +14,5 @@ get "/hello/:name" do
 get "/hello/:name" do
     @user_name = params[:name]
     "My favorite song is #{@song}."
-  end
-
-
   end 
   end
