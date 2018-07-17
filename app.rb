@@ -10,17 +10,17 @@ class App
 end
 
 get "/:name" do
-    @name = params[:name]
-    "My name is #{@name}."
+    @user = params[:name]
+    "My name is #{@user}."
     end 
     
 get "/:hometown" do
-    @hometown = params[:hometown]
-    "My hometwon is #{@hometown}."
+    @town = params[:hometown]
+    "My hometwon is #{town}."
     end 
     
 get "/:song" do
-    @song = params[:song]
-    "My favorite song is #{@song}."
+    @listen = params[:song]
+    "My favorite song is #{@listen}."
     end
 end 
