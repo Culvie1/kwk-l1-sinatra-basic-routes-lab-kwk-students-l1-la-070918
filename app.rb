@@ -3,16 +3,16 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 end
 
-get "/hello/:name" do
+get "/:name" do
     @name = params[:name]
     "My name is #{@name}."
     
-get "/hello/:name" do
-    @hometown = params[:name]
+get "/:hometown" do
+    @hometown = params[:hometown]
     "My hometwon is #{@hometown}."
 
-get "/hello/:name" do
-    @song = params[:name]
+get "/:song" do
+    @song = params[:song]
     "My favorite song is #{@song}."
   end 
   end
