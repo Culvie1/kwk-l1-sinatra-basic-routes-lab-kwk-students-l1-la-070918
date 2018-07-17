@@ -23,4 +23,3 @@ get "/:song" do
     @listen = params[:song]
     "My favorite song is #{@listen}."
     end
-end 
