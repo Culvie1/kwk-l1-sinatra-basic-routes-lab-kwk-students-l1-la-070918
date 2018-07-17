@@ -3,6 +3,12 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 end
 
+class App
+  get '/' do
+    "Hello World"
+  end
+end
+
 get "/:name" do
     @name = params[:name]
     "My name is #{@name}."
